@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdurahman Kayysan - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievement">Achievement</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a
+          href="https://www.instagram.com/kaie.ci?igsh=NnNwb2l5MWdzcmlj"
+          target="_blank"
+          aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://github.com/kayy-eci"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </header>
+
+    <section id="home" class="hero fade-in">
+      <div class="hero-left">
+        <p>Hi, I'm <span class="name">Abdurahman kayysan</span></p>
+        <p class="role">Programmer</p>
+        <p class="bio">
+          I create beautiful, responsive websites that combine modern design
+          with powerful functionality. Welcome to my personal portfolio.
+        </p>
+        <br />
+        <br />
+        <br />
+        <a
+          href="public/Cv-kayysan.pdf"
+          download
+          class="view-btn"
+          target="_blank"
+        >
+          Download CV <i class="fas fa-download"></i>
+        </a>
+      </div>
+      <div class="avatar">
+        <img src="public/avatar.jpeg" alt="Abdurahman kayysan" />
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="skills" class="fade-in">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div
+          class="skill"
+          style="background: #f7df1e; color: #111"
+          data-name="Javascript"
+        >
+          <img src="public/icons8-javascript-96.png" alt="Javascript" />
+          <span>Javascript</span>
+        </div>
+        <div class="skill" style="background: #2b90d9" data-name="Typescript">
+          <img src="public/icons8-typescript-96.png" alt="Typescript" />
+          <span>Typescript</span>
+        </div>
+        <div class="skill" style="background: #ff6b2d" data-name="HTML">
+          <img src="public/icons8-html-96.png" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill" style="background: #19a7d6" data-name="CSS">
+          <img src="public/icons8-css-96.png" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div
+          class="skill"
+          style="background: #ffd24a; color: #111"
+          data-name="Python"
+        >
+          <img src="public/icons8-python-96.png" alt="Python" />
+          <span>Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievement" class="fade-in">
+      <h2 class="section-title">Achievement</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="public/DicodingWeb.jpeg" alt="Dicoding Web Certificate" />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="public/DicodingJs.jpeg"
+              alt="Dicoding JavaScript Certificate"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img src="public/Freecodecamp.png" alt="FreeCodeCamp Certificate" />
+          </div>
+          <div class="carousel-slide">
+            <img src="public/Python.jpeg" alt="Python Certificate" />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="public/cybersecurity.jpeg"
+              alt="Cybersecurity Certificate"
+            />
+          </div>
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" aria-label="Next slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel-dots"></div>
+      </div>
+    </section>
+
+    <section id="project" class="fade-in">
+      <h2 class="section-title">Project</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="public/games.png" alt="Dragon Repeller Game" />
+          <p>
+            Game simple bertema RPG yang saya namakan "Dragon Repeller" yang
+            saya buat menggunakan HTML, CSS, JS dengan metode DOM.
+          </p>
+          <a
+            href="https://github.com/kayy-eci/Dragon-Repeller"
+            target="_blank"
+            class="view-btn"
+            >View Project <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="project-card">
+          <img
+            src="public/kihajardewantara.png"
+            alt="Ki Hajar Dewantara Website"
+          />
+          <p>
+            Web tribute tentang Ki Hajar dewantara yang saya buat menggunakan
+            HTML dan CSS.
+          </p>
+          <a
+            href="https://github.com/kayy-eci/Web-Ki-hajar-dewantara"
+            target="_blank"
+            class="view-btn"
+            >View Project <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrap">
+        <div class="contact-card contact-left">
+          <p>Jangan ragu untuk menghubungi saya:</p>
+          <ul>
+            <li><i class="fab fa-instagram"></i> Kaie.ci</li>
+            <li><i class="fab fa-linkedin"></i> Kayysan</li>
+            <li><i class="fab fa-github"></i> Kayy-ci</li>
+          </ul>
+        </div>
+        <div class="contact-card form">
+          <input type="text" placeholder="Your name" id="name" required />
+          <input type="email" placeholder="Your email" id="email" required />
+          <textarea
+            placeholder="Isi pesan . . ."
+            id="message"
+            rows="5"
+            required
+          ></textarea>
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>All rights reserved to Abdurrahman Kayysan</footer>
+  </body>
+</html>

@@ -26,7 +26,6 @@
         <a href="#project">Project</a>
         <a href="#contact">Contact</a>
       </nav>
-
       <div class="socials">
         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a
@@ -54,7 +53,6 @@
         </p>
         <br />
         <br />
-        <br />
         <a
           href="public/Cv-kayysan.pdf"
           download
@@ -68,7 +66,6 @@
         <img src="public/avatar.jpeg" alt="Abdurahman kayysan" />
       </div>
     </section>
-    <br />
     <br />
     <br />
     <br />
@@ -190,17 +187,33 @@
             <li><i class="fab fa-github"></i> Kayy-ci</li>
           </ul>
         </div>
-        <div class="contact-card form">
-          <input type="text" placeholder="Your name" id="name" required />
-          <input type="email" placeholder="Your email" id="email" required />
-          <textarea
-            placeholder="Isi pesan . . ."
-            id="message"
-            rows="5"
-            required
-          ></textarea>
-          <button id="sendBtn">Send</button>
-        </div>
+        <form
+          action="https://formspree.io/f/xpweeeey"
+          method="POST"
+          class="contact-card form"
+          id="contact"
+        >
+          <label>
+            Your Name:
+            <input type="name" id="nama" placeholder="Your name . . ." required />
+          </label>
+          <label>
+            Your email:
+            <input type="email" id="email" placeholder="Your name . . ." required />
+          </label>
+          <label>
+            Your message:
+            <textarea
+              name="message"
+              placeholder="Your message"
+              required
+              rows="5"
+              id="msg"
+            ></textarea>
+          </label>
+          <input type="hidden" name="_format" value="plain" />
+          <button id="kirim" type="submit">Send</button>
+        </form>
       </div>
     </section>
 

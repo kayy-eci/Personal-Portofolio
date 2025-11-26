@@ -73,35 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (totalSlides > 0) autoSlideInterval = setInterval(nextSlide, 3000); // kalo mouse nya udah ga hover lagi di sertifikat nya auto slide nya jalan lagi
     });
   }
-  // ini buat yang bagian contact form nya
-  const sendBtn = document.getElementById("sendBtn");
-  if (sendBtn) {
-    sendBtn.addEventListener("click", function () {
-      const nameEl = document.getElementById("name");
-      const emailEl = document.getElementById("email");
-      const messageEl = document.getElementById("message");
-      const name = nameEl ? nameEl.value.trim() : ""; // trim itu buat ngilangin spasi di awal sama akhir
-      const email = emailEl ? emailEl.value.trim() : "";
-      const message = messageEl ? messageEl.value.trim() : "";
-      if (!name || !email || !message) {
-        alert("Please fill all fields."); // nge cek kalo ada yang ga di isi
-        return;
-      }
-      if (!isValidEmail(email)) {
-        alert("Please enter a valid email address.");
-        return; // nge cek kalo email nya bener atau ga KALO ga bener bakal muncul alert
-      }
-      alert("Thanks " + name + "  your message was sent (demo)."); // kalo semua udah bener bakal muncul alert makasih udah ngirim pesan ini mah buat boong boongan aja
-      if (nameEl) nameEl.value = "";
-      if (emailEl) emailEl.value = "";
-      if (messageEl) messageEl.value = "";
-    });
-  }
 
-  function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // cek kalo ada spasi, domain email, sama kalo ga ada @ nya
-    return emailRegex.test(email);
-  }
+  const sendBtn = document.getElementById("sendBtn");
   document.querySelectorAll("nav a").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -116,4 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+
+const kirimcontact = document.getElementById("kirim");
+const namaInput = document.getElementById("nama");
+const emailInput = document.getElementById("email");
+const msgInput = document.getElementById("msg");
+
+  kirimcontact.addEventListener("click", () => {
+    setInterval(() => {
+    const nama = (namaInput.value = "");
+    const email = (emailInput.value = "");
+    const msg = (msgInput.value = "");
+  }, 5);
 });

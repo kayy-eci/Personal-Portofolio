@@ -91,16 +91,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 const kirimcontact = document.getElementById("kirim");
 const namaInput = document.getElementById("nama");
 const emailInput = document.getElementById("email");
 const msgInput = document.getElementById("msg");
 
-  kirimcontact.addEventListener("click", () => {
-    setInterval(() => {
+kirimcontact.addEventListener("click", () => {
+  setInterval(() => {
     const nama = (namaInput.value = "");
     const email = (emailInput.value = "");
     const msg = (msgInput.value = "");
-  }, 5);
+  }, 50);
 });

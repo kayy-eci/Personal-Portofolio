@@ -80,6 +80,7 @@ nav a:hover::after {
   align-items: center;
   justify-content: space-between;
   padding: 80px 100px;
+  margin-top: 20px;
   min-height: 60vh;
 }
 .hero-left {
@@ -92,12 +93,13 @@ nav a:hover::after {
 }
 .role {
   font-weight: 700;
-  margin-top: 100px;
+  margin-left: 8px;
   font-size: 24px;
+  color: #e6eef6;
 }
 .bio {
   color: var(--normal);
-  margin-top: 10px;
+  margin-top: 30px;
   line-height: 1.8;
 }
 .avatar {
@@ -269,8 +271,6 @@ h2.section-title {
   margin-bottom: 15px;
 }
 
-
-
 #home {
   scroll-margin-top: 100px;
 }
@@ -285,22 +285,6 @@ skills {
 skills {
   scroll-margin-top: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .projects img:hover {
   transform: translateY(-10px);
@@ -427,65 +411,45 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
 }
-@media (max-width: 768px) {
-  header {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    padding: 60px 20px;
-  }
-  section {
-    padding: 60px 20px;
-  }
-  .contact-wrap {
-    grid-template-columns: 1fr;
-  }
-  .skills {
-    gap: 30px;
-  }
-  .skill {
-    width: 80px;
-    height: 80px;
-    font-size: 24px;
-  }
-  .carousel-container {
-    padding: 30px 10px;
-  }
-  .carousel-btn {
-    width: 35px;
-    height: 35px;
-    font-size: 14px;
-  }
-  .carousel-btn.prev {
-    left: 5px;
-  }
-  .carousel-btn.next {
-    right: 5px;
-  }
-  .carousel-slide img {
-    max-width: 100%;
-  }
-}
 
-/* EXTRA RESPONSIVE BREAKPOINTS */
+
+
+
+/* responsive shiballl */
+/* ipad bosku */
 @media (max-width: 1024px) {
   header {
-    padding: 18px 40px;
+    padding: 15px 40px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 
   .hero {
     padding: 60px 40px;
-    min-height: 55vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .role {
+    font-size: 22px;
+    margin-top: 40px;
   }
 
   .avatar {
@@ -493,131 +457,97 @@ footer {
     height: 150px;
   }
 
-  .name {
-    font-size: 28px;
-  }
-  .role {
-    font-size: 20px;
-  }
-
   section {
     padding: 60px 40px;
   }
 
-  .projects img {
-    height: 220px;
-  }
-}
-
-@media (max-width: 900px) {
-  header {
-    padding: 16px 28px;
-    align-items: flex-start;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero {
-    padding: 50px 30px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .hero-left {
-    max-width: 520px;
-  }
-
-  .carousel-container {
-    max-width: 700px;
-    padding: 30px 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 15px;
-  }
-
-  header {
-    padding: 14px 18px;
-  }
-
-  .avatar {
-    width: 120px;
-    height: 120px;
-    border-width: 4px;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-  .role {
-    font-size: 18px;
+  h2.section-title {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   .skills {
-    gap: 18px;
+    gap: 30px;
   }
+
   .skill {
-    width: 70px;
-    height: 70px;
-    font-size: 20px;
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+  }
+
+  .carousel-container {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+
+  .carousel-slide img {
+    max-width: 100%;
   }
 
   .carousel-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .projects img {
-    height: 180px;
     max-width: 100%;
-  }
-
-  .project-card {
-    max-width: 100%;
+    height: 200px;
   }
 
   .contact-wrap {
     grid-template-columns: 1fr;
-    padding: 0 10px;
+    gap: 25px;
   }
+
   .contact-card {
     max-width: 100%;
   }
-
-  section {
-    padding: 40px 12px;
-  }
 }
 
+
+/* Hp bosku*/
 @media (max-width: 480px) {
   header {
-    padding: 12px 12px;
+    padding: 12px 15px;
+    gap: 10px;
   }
+
+  nav {
+    gap: 8px;
+  }
+
   nav a {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .socials a {
     font-size: 14px;
   }
 
   .hero {
-    padding: 35px 12px;
-    min-height: auto;
-  }
-  .hero-left {
-    margin: 0 auto;
+    padding: 30px 15px;
+    gap: 20px;
   }
 
   .name {
     font-size: 20px;
   }
+
   .role {
     font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .bio {
+    font-size: 13px;
   }
 
   .avatar {
@@ -625,24 +555,78 @@ footer {
     height: 100px;
   }
 
-  .projects {
-    gap: 20px;
+  section {
+    padding: 30px 15px;
   }
+
+  h2.section-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    gap: 15px;
+  }
+
+  .skill {
+    width: 85px;
+    height: 85px;
+    font-size: 16px;
+  }
+
+  .skill img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill:hover {
+    transform: scale(1.05) translateY(-3px);
+  }
+
+  .skill span {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .carousel-container {
+    padding: 15px 8px;
+  }
+
+  .carousel-slide img {
+    max-height: 250px;
+  }
+
+  .carousel-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
   .projects img {
     height: 150px;
   }
 
-  .carousel-dots {
-    margin-top: 18px;
-    gap: 8px;
+  .project-card p {
+    font-size: 12px;
   }
-  .dot {
-    width: 10px;
-    height: 10px;
+
+  .contact-card {
+    padding: 15px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 8px;
+    font-size: 12px;
   }
 
   .view-btn {
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 20px 15px;
+    font-size: 11px;
   }
 }

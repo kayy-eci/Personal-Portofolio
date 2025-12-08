@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevBtn = document.querySelector(".carousel-btn.prev");
   const nextBtn = document.querySelector(".carousel-btn.next");
   const totalSlides = slides.length;
-  // buat bikin tombol next sama prev nya sesuai jumlah slide
+  
   if (dotsContainer && slides.length > 0) {
     slides.forEach((_, index) => {
       const dot = document.createElement("div");
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.classList.toggle("active", index === currentSlide);
     });
   }
-  // ini gausah dijelasin ya pokok nya buat fungsi next sama prev nya button nya
+
   function nextSlide() {
     if (totalSlides === 0) return;
     currentSlide = (currentSlide + 1) % totalSlides;
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentSlide = index;
     updateCarousel();
   }
-  // kalo di klik bakal manggil fungsi next sama prev biar bisa geser slide nya
+
   if (nextBtn) nextBtn.addEventListener("click", nextSlide);
   if (prevBtn) prevBtn.addEventListener("click", prevSlide);
   // ini biar carousel nya auto slide setiap 3000ms atau 3 detik
@@ -101,5 +101,5 @@ kirimcontact.addEventListener("click", () => {
     const nama = (namaInput.value = "");
     const email = (emailInput.value = "");
     const msg = (msgInput.value = "");
-  }, 50);
+  }, 80);
 });
